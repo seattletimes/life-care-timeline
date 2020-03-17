@@ -1,0 +1,181 @@
+[
+  {
+    "schoolYear": "2014-2015",
+    "date": "10/24/2014",
+    "school": "Marysville-Pilchuck High School",
+    "location": "Marysville, Wash.",
+    "deaths": 5,
+    "injuries": 1,
+    "enrolled": 1253,
+    "url": "https://www.seattletimes.com/seattle-news/crime/1400-page-report-on-marysville-school-shooting-cant-nail-down-motive/"
+  },
+  {
+    "schoolYear": "2014-2015",
+    "date": "11/25/2014",
+    "school": "Miami Carol City Senior High School*",
+    "location": "Miami Gardens, Fla.",
+    "deaths": 1,
+    "injuries": 1,
+    "enrolled": 1122,
+    "notes": "one dead on injured, according to news sources",
+    "url": "http://www.miamiherald.com/news/local/crime/article4139118.html",
+    "undefined": "https://www.local10.com/news/teen-dies-1-charged-in-miami-carol-city-high-school-shooting-"
+  },
+  {
+    "schoolYear": "2014-2015",
+    "date": "1/26/2015",
+    "school": "Hand in Hand Christian Montessori",
+    "location": "Roseville, Minn.",
+    "deaths": 1,
+    "injuries": 0,
+    "enrolled": 288,
+    "notes": "suicide",
+    "Clarification": "An unidentified 48-year-old man fired a shot into the school's kitchen window before fatally shooting himself in the school's parking lot. Two school staff members were in the kitchen at the time of the shooting, but they were not injured. They alerted law enforcement, who found the man in a vehicle in the school's parking lot, dead of a self-inflicted gunshot wound.\n\n",
+    "url": "http://www.startribune.com/man-kills-himself-outside-roseville-montessori-school/289873481/",
+    "undefined": "WaPo has the name as Hand in Hand Montessori (Hand in Hand Christian Montessori - https://hihcm.org/)"
+  },
+  {
+    "schoolYear": "2015-2016",
+    "date": "2/12/2016",
+    "school": "Independence High School",
+    "location": "Glendale, Ariz.",
+    "deaths": 2,
+    "injuries": 0,
+    "enrolled": 2114,
+    "Clarification": "Fixed link",
+    "url": "https://www.azcentral.com/story/news/local/glendale/breaking/2016/02/12/glendale-independence-high-school-shooting/80282174/"
+  },
+  {
+    "schoolYear": "2015-2016",
+    "date": "6/8/2016",
+    "school": "Jeremiah E. Burke High School*",
+    "location": "Dorchester, Mass.",
+    "deaths": 1,
+    "injuries": 3,
+    "enrolled": 532,
+    "Clarification": "EveryTown & WaPo don't list this... Article says (near HS)",
+    "url": "https://www.bostonglobe.com/metro/2016/06/22/suspects-arrested-slaying-outside-jeremiah-burke-high-school/ya7CScdnIdMqjoZSJrYw3N/story.html"
+  },
+  {
+    "schoolYear": "2016-2017",
+    "date": "9/8/2016",
+    "school": "Alpine High School",
+    "location": "Alpine, Texas",
+    "deaths": 1,
+    "injuries": 2,
+    "enrolled": 292,
+    "notes": "1 of the injuries was officer shooting an officer",
+    "Clarification": "I think that still counts, if it's involved in the same shooting event.",
+    "url": "https://www.cnn.com/2016/09/08/us/texas-high-school-shooting/index.html"
+  },
+  {
+    "schoolYear": "2016-2017",
+    "date": "9/28/2016",
+    "school": "Townville Elementary School",
+    "location": "Townville, S.C.",
+    "deaths": 1,
+    "injuries": 2,
+    "enrolled": 295,
+    "Clarification": "Teen killed his father at home, then fired on school children, fatally shooting one, injuring 2.",
+    "url": "https://www.greenvilleonline.com/story/news/crime/2016/09/28/shooting-reported-townville-elementary/91227346/"
+  },
+  {
+    "schoolYear": "2016-2017",
+    "date": "4/10/2017",
+    "school": "North Park Elementary School",
+    "location": "San Bernardino, Calif.",
+    "deaths": 3,
+    "injuries": 1,
+    "enrolled": 531,
+    "notes": "Changed link to San Berd'o paper",
+    "url": "https://www.sbsun.com/2018/04/09/north-park-elementary-looking-back-at-the-san-bernardino-school-shooting-1-year-later/"
+  },
+  {
+    "schoolYear": "2017-2018",
+    "date": "9/13/2017",
+    "school": "Freeman High School",
+    "location": "Rockford, Wash.",
+    "deaths": 1,
+    "injuries": 3,
+    "enrolled": 330,
+    "notes": "Changed link to Spokane paper",
+    "url": "http://www.spokesman.com/stories/2017/sep/14/rockford-nightmare-freeman-high-school-shooting-le/#/0"
+  },
+  {
+    "schoolYear": "2017-2018",
+    "date": "11/14/2017",
+    "school": "Rancho Tehama Elementary",
+    "location": "Corning, Calif.",
+    "deaths": 1,
+    "injuries": 2,
+    "enrolled": 100,
+    "notes": "Complicated, many dead, wounded",
+    "Clarification": "Originally had 6/18 listed. WaPo has 2 injured, 0 dead. Looks like Everytown lists just one student hurt. Shooter died off campus.",
+    "url": "http://www.latimes.com/local/lanow/la-me-ln-tehama-shooting-school-response-20171116-htmlstory.html"
+  },
+  {
+    "schoolYear": "2017-2018",
+    "date": "12/7/2017",
+    "school": "Aztec High School",
+    "location": "Aztec, N.M.",
+    "deaths": 3,
+    "injuries": 0,
+    "enrolled": 905,
+    "url": "https://www.nbcnews.com/news/us-news/aztec-high-school-shooting-gunman-disguised-himself-randomly-killed-school-n827881"
+  },
+  {
+    "schoolYear": "2017-2018",
+    "date": "1/23/2018",
+    "school": "Marshall County High School",
+    "location": "Benton, Ky.",
+    "deaths": 2,
+    "injuries": 14,
+    "enrolled": 1384,
+    "notes": "Changed link to Louisville paper",
+    "Clarification": " Preliminary reports suggest that 14 other students were also shot, some sustaining critical injuries. An additional four people sustained other injuries as they tried to escape. ",
+    "url": "https://www.courier-journal.com/story/news/local/2018/01/30/kentucky-school-shooting-marshall-county-sheriff-arrested-teen-suspect/1078539001/"
+  },
+  {
+    "schoolYear": "2017-2018",
+    "date": "2/14/2018",
+    "school": "Marjory Stoneman Douglas High School",
+    "location": "Parkland, Fla.",
+    "deaths": 17,
+    "injuries": 17,
+    "enrolled": 3158,
+    "url": "https://www.nytimes.com/2018/02/14/us/parkland-school-shooting.html"
+  },
+  {
+    "schoolYear": "2017-2018",
+    "date": "3/7/2018",
+    "school": "Huffman High School",
+    "location": "Birmingham, Ala.",
+    "deaths": 1,
+    "injuries": 1,
+    "enrolled": 1433,
+    "Clarification": "Shooter injured himself.. ",
+    "url": "https://www.cnn.com/2018/03/09/us/birmingham-school-shooting-teen-charged/index.html"
+  },
+  {
+    "schoolYear": "2017-2018",
+    "date": "3/20/2018",
+    "school": "Great Mills High School",
+    "location": "Great Mills, Md.",
+    "deaths": 2,
+    "injuries": 1,
+    "enrolled": 1535,
+    "url": "https://www.cnn.com/2018/03/27/us/maryland-school-shooting-cause-of-death-trnd/index.html"
+  },
+  {
+    "schoolYear": "2017-2018",
+    "date": "5/18/2018",
+    "school": "Santa Fe High School",
+    "location": "Santa Fe, Texas",
+    "deaths": 10,
+    "injuries": 13,
+    "enrolled": 1462,
+    "notes": "Changed link to Houston Chronicle story",
+    "Clarification": "Armed with a shotgun and revolver reportedly owned legally by his father, Dimitrios Pagourtzis, a 17-year-old student, opened fire on classmates and staff at Santa Fe High School, killing ten, and injuring at least 13 others. He eventually surrendered and was taken into custody by police, who also found two homemade explosive devices left at the school by Pagourtzis.\n\n",
+    "url": "https://www.chron.com/neighborhood/bayarea/news/article/Santa-Fe-students-returning-to-school-for-first-12950347.php"
+  }
+]
