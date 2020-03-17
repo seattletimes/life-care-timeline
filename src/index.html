@@ -10,23 +10,24 @@
 
       <main class="interactive">
 
-        <h1>Marysville-Pilchuck Class of 2018</h1>
+        <h1>TK</h1>
 
         <p>
-          More than 50 people have been killed and 100 injured in U.S. school shootings since Oct. 24, 2014, when a freshman opened fire on his classmates at Marysville-Pilchuck High School. During the high-school career of the Class of 2018, more than 41,000 students across the country have been exposed to school shootings, according to enrollment and shooting data compiled by The Washington Post.
+          TK
         </p>
 
         <table class="shootings collapsed">
           <thead>
             <tr>
-              <th>Marysville-Pilchuck High School Class of 2018
-              <th>School year
-              <th>School shootings
+              <th>Date
+              <th>Inside Life Care Center of Kirkland
+
               <th>
                 <ul class="key">
-                  <li> <div class="death dot"></div> Deaths
-                  <li> <div class="injury dot"></div> Injuries
+                  <li> <div class="death dot"></div> Confirmed cases
+                  <li> <div class="injury dot"></div> Deaths
                 </ul>
+                <th>Outside in Washington
               </th>
           <tbody>
           <%
@@ -67,6 +68,7 @@
             <% } %>
 
             <tr data-year="<%= row.schoolYear %>">
+              <td class="date"><%= formatDate(row.date) %>
               <td class="event">
                 <% if (row.link) {  %>
                 <a href="<%= row.link %>" target="_blank">
@@ -75,7 +77,15 @@
                 <% if (row.link) { %>
                 </a>
                 <% } %>
-              <td class="date"><%= formatDate(row.date) %>
+
+                <td class="dots">
+                  <% for (var i = 0; i < row.deaths; i++) { %>
+                  <div class="death dot"></div>
+                  <% } %>
+                  <% for (var i = 0; i < row.injuries; i++) { %>
+                  <div class="injury dot"></div>
+                  <% } %>
+
               <td class="school <%= row.school === 'Marysville-Pilchuck High School' ? 'first' : '' %>">
                 <% if (row.url) { %>
                 <a href="<%= row.url %>" target="_blank">
@@ -90,19 +100,17 @@
                   <% } %>
                 </i>
 
-              <td class="dots">
-                <% for (var i = 0; i < row.deaths; i++) { %>
-                <div class="death dot"></div>
-                <% } %>
-                <% for (var i = 0; i < row.injuries; i++) { %>
-                <div class="injury dot"></div>
-                <% } %>
+
           <% }) %>
             <tr class="uncollapse" tabindex=0 role="button">
               <td colspan="99">
-                Show sophomore, junior and senior years
+                Show more weeks
               </td>
-        </table>
+            </table>
+            <div>
+              <%= t.include("partials/_belongAudio.html") %>
+            </div>
+
         <div class="source">
           <div>
             <p>*Reports unclear whether shooting happened on school property</p>
@@ -110,8 +118,9 @@
             <p>Sources: <a href="https://github.com/washingtonpost/data-school-shootings">The Washington Post</a>, Everytown Research, Marysville-Pilchuck High School, news sources</p>
           </div>
           <div class="credit">
-            <p>Design and development: Emily M. Eng, Alec Glassford and Thomas Wilburn</p>
-            <p>Research and reporting: Paige Cornwell, Laura Gordon, Sean Quinton and Ben Woodard</p>
+            <p>Design and development: Emily M. Eng</p>
+            <P>Audio editing: Lauren Frohne</P>
+            <p>Research and reporting: Asia Fields and Mary Hudetz</p>
           </div>
       </main>
     </responsive-child>

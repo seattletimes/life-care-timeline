@@ -4,6 +4,7 @@
 require("component-responsive-frame/child");
 
 var $ = require("./lib/qsa");
+require("./audio");
 
 var uncollapseButton = $.one(".uncollapse");
 var uncollapse = function uncollapse() {

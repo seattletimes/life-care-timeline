@@ -1,0 +1,96 @@
+@monospace: monospace;
+@red: @df-blue;
+
+@keyframes typing {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.audio-player {
+  // display: flex;
+  max-width: 630px;
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  margin: auto;
+
+  audio {
+    margin: auto;
+    display: block;
+    min-width: 50%;
+
+    @media @mobile {
+      width: 70%;
+    }
+  }
+
+  .transcript-box {
+    font-weight: bold;
+    color: #C75824;
+    position: relative;
+    // min-height: 20vh;
+    padding: 10px 40px 20px 40px;
+    text-align: center;
+
+    transition: all .3s linear;
+    opacity: 1;
+
+    @media @mobile {
+      // padding: 32px 16px;
+      padding: 0px 20px 10px 20px;
+    }
+
+    &.paused {
+      color: @df-middle-gray;
+    }
+
+    .line {
+      // font-family: @monospace;
+      font-size: 28px;
+
+      @media @mobile {
+        font-size: 21px;
+      }
+
+      &.intro {
+        text-align: center;
+      }
+
+      .speaker {
+        font-size: 28px;
+        color: #C75824;
+        display: inline-block;
+        padding: 4px 16px;
+        @media @mobile {
+          font-size: 21px;
+          padding: 0px 0px 10px 0px;
+        }
+        &:before {
+          content: "“";
+        }
+        &:after {
+          content:"”"
+        }
+      }
+
+      &.prep {
+        position: absolute;
+        transition: all .3s linear;
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      &.fade {
+        // transform: translateY(-20px);
+        opacity: 0;
+      }
+
+      &.active {
+        .typed {
+          animation: step-start typing .2s both;
+        }
+      }
+    }
+  }
+
+}
