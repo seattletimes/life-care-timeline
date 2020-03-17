@@ -1,0 +1,13 @@
+<%
+console.log(speaker);
+console.log(mp3);
+console.log(vtt);
+%>
+<div class="audio-player" id="player">
+    <div class="transcript-box">
+      <div class="intro line">
+        <div class="speaker"><%= speaker %></div>
+      </div>
+    </div>
+    <audio class="player" controls src="<%= mp3 %>" data-transcript="<%= vtt %>"></audio>
+  </div>

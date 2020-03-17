@@ -24,8 +24,8 @@
 
               <th>
                 <ul class="key">
-                  <li> <div class="death dot"></div> Confirmed cases
-                  <li> <div class="injury dot"></div> Deaths
+                  <li> <div class="case dot"></div> Confirmed cases
+                  <li> <div class="death dot"></div> Deaths
                 </ul>
                 <th>Outside in Washington
               </th>
@@ -45,77 +45,75 @@
             var [momentA, momentB] = [toMomentObj(rowA.date), toMomentObj(rowB.date)];
             return momentA.valueOf() - momentB.valueOf();
           };
+          
+          <!-- console.log(JSON.stringify(json.timeline)); -->
+          var rows = json.timeline;
 
-          // Combine the rows for 10/24/2014
-          var timelineIndex = json.timeline.findIndex(r => r.date === "10/24/2014");
-          var mphsIndex = json.mphs.findIndex(r => r.date === "10/24/2014");
-          Object.assign(json.timeline[timelineIndex], json.mphs[mphsIndex]); // combine into timeline list
-          json.mphs.splice(mphsIndex, 1); // remove from mphs list
-
-
-          var rows = json.timeline.concat(json.mphs).sort(compareDate);
           var currentYear = null;
           %>
+
           <% rows.forEach(function(row) {
-               if (row.schoolYear !== currentYear) {
-                 currentYear = row.schoolYear; %>
-            <tr data-year="<%= row.schoolYear %>" class="year-head">
+               if (row.Year !== currentYear) {
+                 currentYear = row.Year; %>
+            <tr data-year="<%= row.Year %>" class="year-head">
               <th></th>
-              <th><%= row.schoolYear %></th>
+              <th><%= row.Year %></th>
               <th></th>
               <th></th>
             </tr>
             <% } %>
 
-            <tr data-year="<%= row.schoolYear %>">
-              <td class="date"><%= formatDate(row.date) %>
+            <tr data-year="<%= row.Year %>">
+              <td class="date"><%= formatDate(row.date) %></td>
               <td class="event">
-                <% if (row.link) {  %>
-                <a href="<%= row.link %>" target="_blank">
+                <% if (row.mp3) {%>
+                  <%
+                  var audioData = {
+                    speaker: row.speaker,
+                    mp3: "./assets/" + row.mp3,
+                    vtt: "./assets/" + row.vtt,
+                  }
+                   %>
+                  <%= t.include("partials/_audio.html", audioData) %>
                 <% } %>
-                <%= row.event %>
-                <% if (row.link) { %>
-                </a>
-                <% } %>
+              </td>
 
-                <td class="dots">
+              <td class="dots">
+                  <% for (var i = 0; i < row.cases; i++) { %>
+                    <div class="case dot"></div>
+                  <% } %>
+
                   <% for (var i = 0; i < row.deaths; i++) { %>
-                  <div class="death dot"></div>
+                    <div class="death dot"></div>
                   <% } %>
-                  <% for (var i = 0; i < row.injuries; i++) { %>
-                  <div class="injury dot"></div>
-                  <% } %>
+              </td>
 
-              <td class="school <%= row.school === 'Marysville-Pilchuck High School' ? 'first' : '' %>">
+              <td class="lifeCare <%= row.lifeCare === 'lifeCare' ? 'first' : '' %>">
                 <% if (row.url) { %>
-                <a href="<%= row.url %>" target="_blank">
+                  <a href="<%= row.url %>" target="_blank">
                 <% } %>
-                <%= row.school %>
+                <%= row.lifeCare %>
                 <% if (row.url) { %>
-                </a>
+                  </a>
                 <% } %>
-                <i><%= row.location %>
-                  <% if (row.enrolled) { %>
-                  <span class="enrolled"><%= row.enrolled.toLocaleString("en-US") %> students enrolled</span>
-                  <% } %>
+                <i>
+                  <%= row.audio %>
                 </i>
-
-
+              </td>
+            </tr>
           <% }) %>
             <tr class="uncollapse" tabindex=0 role="button">
               <td colspan="99">
                 Show more weeks
               </td>
-            </table>
-            <div>
-              <%= t.include("partials/_belongAudio.html") %>
-            </div>
-
+            </tr>
+        </table>
+        <div></div>
         <div class="source">
           <div>
-            <p>*Reports unclear whether shooting happened on school property</p>
-            <p>Incidents shown here only include fatal school shootings during the four school years of the Marysville-Pilchuck Class of 2018. Death and injury counts show the number of people killed or injured on school property by shootings, including shooter suicides.</p>
-            <p>Sources: <a href="https://github.com/washingtonpost/data-school-shootings">The Washington Post</a>, Everytown Research, Marysville-Pilchuck High School, news sources</p>
+            <p>*Confirmed cases do include deaths</p>
+            <p>XXX</p>
+            <p>Sources: Life Care Center of Kirkland, King County Public Health, Snohomish Public Health, Times reporting</p>
           </div>
           <div class="credit">
             <p>Design and development: Emily M. Eng</p>
