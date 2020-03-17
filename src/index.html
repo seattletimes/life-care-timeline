@@ -66,6 +66,10 @@
             <tr data-year="<%= row.Year %>">
               <td class="date"><%= formatDate(row.date) %></td>
               <td class="event">
+                <%= row.lifeCare %>
+                <% if (row.url) { %>
+                  </a>
+                <% } %>
                 <% if (row.mp3) {%>
                   <%
                   var audioData = {
@@ -108,23 +112,20 @@
                   <% } %>
               </td>
 
-              <td class="lifeCare <%= row.lifeCare === 'lifeCare' ? 'first' : '' %>">
+              <td class="wa">
                 <% if (row.url) { %>
                   <a href="<%= row.url %>" target="_blank">
                 <% } %>
-                <%= row.lifeCare %>
-                <% if (row.url) { %>
+                <%= row.wa %>
+                <% if (row.urlWA) { %>
                   </a>
                 <% } %>
-                <i>
-                  <%= row.audio %>
-                </i>
               </td>
             </tr>
           <% }) %>
             <tr class="uncollapse" tabindex=0 role="button">
               <td colspan="99">
-                Show more weeks
+                Show more
               </td>
             </tr>
         </table>

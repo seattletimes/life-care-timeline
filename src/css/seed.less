@@ -14,19 +14,20 @@ h1 {
   padding: 0;
   white-space: nowrap;
   list-style-type: none;
-  text-align: left;
+  text-align: left;      
+  background-color: @df-off-white;
 }
 
 .shootings {
   border-collapse: collapse;
   font-family: @df-sans;
-  font-size: 16px;
+  font-size: 14px;
   width: 100%;
 
-  [data-year="2014-2015"],
-  [data-year="2016-2017"] { background: white; }
+  [data-year="Jan"],
+  [data-year="March"] { background: white; }
 
-  [data-year="2015-2016"],
+  [data-year="Feb"],
   [data-year="2017-2018"] { background: lighten(#9bb3dc, 20%); }
 
 
@@ -51,12 +52,14 @@ h1 {
     }
 
     &.dots {
-      max-width: 170px;
+      max-width: 360px;
       line-height: 1;
+      background-color: @df-off-white;
+      text-align: center;
     }
 
-    &.school {
-      white-space: nowrap;
+    &.wa {
+      white-space: wrap;
 
       @media @mobile {
         white-space: normal;

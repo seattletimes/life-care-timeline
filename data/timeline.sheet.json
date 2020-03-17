@@ -1,33 +1,33 @@
 [
   {
-    "year": "2014-2015",
+    "year": "Jan",
     "date": "1/21/2020",
     "wa": "First known case of COVID-19 in U.S."
   },
   {
-    "year": "2014-2015",
+    "year": "Feb",
     "date": "2/10/2020",
     "lifeCare": "Life Care Center staff notice an outbreak of respiratory illness",
     "cases": 0
   },
   {
-    "year": "2014-2015",
+    "year": "Feb",
     "date": "2/17/2020",
     "lifeCare": "Resident’s son becomes sick with COVID-19 after visiting the Life Care Center of Kirkland nursing home",
     "cases": 0,
     "url": "http://www.miamiherald.com/news/local/crime/article4139118.html",
+    "urlWA": "http://www.miamicarolcityshs.org/apps/maps/",
     "undefined": "https://www.local10.com/news/teen-dies-1-charged-in-miami-carol-city-high-school-shooting-"
   },
   {
-    "year": "2014-2015",
+    "year": "Feb",
     "date": "2/19/2020",
     "lifeCare": "Life Care says this is when the first patient was taken to the hospital who later tested positive for COVID-19.",
     "cases": 0,
-    "url": "http://www.startribune.com/man-kills-himself-outside-roseville-montessori-school/289873481/",
-    "undefined": "WaPo has the name as Hand in Hand Montessori (Hand in Hand Christian Montessori - https://hihcm.org/)"
+    "url": "http://www.startribune.com/man-kills-himself-outside-roseville-montessori-school/289873481/"
   },
   {
-    "year": "2015-2016",
+    "year": "Feb",
     "date": "2/24/2020",
     "lifeCare": "74-year-old woman is the first resident sent to the hospital for XXXX She later tests positive for COVID-19 and dies on March 2. A 55-year-old resident goes to Harborview Medical Center later that day. He died Feb. 26 but was not linked to COVID-19 until later.",
     "audio": "A 55-year-old resident goes to Harborview Medical Center later that day. He died Feb. 26 but was not linked to COVID-19 until later.",
@@ -38,7 +38,7 @@
     "url": "https://www.azcentral.com/story/news/local/glendale/breaking/2016/02/12/glendale-independence-high-school-shooting/80282174/"
   },
   {
-    "year": "2015-2016",
+    "year": "Feb",
     "date": "2/26/2020",
     "lifeCare": "Life Care holds a Mardi Gras party. An 86-year-old resident dies after moving from Life Care to another residential facility. Her death isn't linked to COVID-19 until later. 92-year-old female - Pneumonia, difficulty breathing",
     "audio": "92-year-old female Pneumonia, difficulty breathing",
@@ -49,14 +49,14 @@
     "url": "https://www.bostonglobe.com/metro/2016/06/22/suspects-arrested-slaying-outside-jeremiah-burke-high-school/ya7CScdnIdMqjoZSJrYw3N/story.html"
   },
   {
-    "year": "2016-2017",
+    "year": "Feb",
     "date": "2/27/2020",
     "lifeCare": "Life Care Center notifies Public Health -- Seattle & King County of a increase in respiratory illness. No details about the illness or number of people affected were provided.",
     "audio": "2 audio 1366 and 1369- A Life Care employee calls 911 to report a 74-year-old resident had difficulty breathing.",
-    "speaker": "2 audio 1366 and 1369- A Life Care employee calls 911 to report a 74-year-old resident had difficulty breathing.",
+    "speaker": "A Life Care employee calls 911 to report a 74-year-old resident had difficulty breathing.",
     "mp3": "1366-trim-2.mp3",
     "vtt": "1366-captions.vtt",
-    "speaker2": "2 audio 1366 and 1369- A Life Care employee calls 911 to report a 74-year-old resident had difficulty breathing.",
+    "speaker2": "A Life Care employees calls 911 to report a resident in her 80s has a fever and difficulty breathing.",
     "mp3_2": "1369-trim-2.mp3",
     "vtt2": "1369-captions.vtt",
     "deaths": 2,
@@ -72,10 +72,11 @@
     "url": "https://www.greenvilleonline.com/story/news/crime/2016/09/28/shooting-reported-townville-elementary/91227346/"
   },
   {
-    "year": "2016-2017",
+    "year": "Feb",
     "date": "2/29/2020",
     "lifeCare": "A handful of CDC staff are sent to the nursing home. Public Health announced the first two cases associated with Life Care: A resident in her 70s and employee in her 40s. A Life Care resident in his 70s dies at EvergreenHealth. His death is announced the next day.",
     "audio": "audio 1413- 79-year-old female Fever, low oxygen, difficulty breathing",
+    "speaker": "79-year-old female Fever, low oxygen, difficulty breathing",
     "mp3": "1413_R-trim-2.mp3",
     "vtt": "1413-captions-2.vtt",
     "cases": 2,
@@ -83,10 +84,11 @@
     "url": "https://www.sbsun.com/2018/04/09/north-park-elementary-looking-back-at-the-san-bernardino-school-shooting-1-year-later/"
   },
   {
-    "year": "2017-2018",
+    "year": "March",
     "date": "3/1/2020",
     "lifeCare": "Public Health announces new cases linked to Life Care, bringing the total to six, including one death.",
     "audio": "63-year-old male Difficulty breathing, turning blue",
+    "speaker": "63-year-old male Difficulty breathing, turning blue",
     "mp3": "1436-trim.mp3",
     "vtt": "1436-captions.vtt",
     "cases": 6,
@@ -94,14 +96,16 @@
     "url": "http://www.spokesman.com/stories/2017/sep/14/rockford-nightmare-freeman-high-school-shooting-le/#/0"
   },
   {
-    "year": "2017-2018",
+    "year": "March",
     "date": "3/2/2020",
     "audio": "3 audio -90-year-old female\nDrowsy, hypoxic (difficulty breathing, low oxygen)",
+    "speaker": "90-year-old female Drowsy, hypoxic (difficulty breathing, low oxygen)",
     "mp3": "1449-trim-2.mp3",
     "vtt": "1449-captions.vtt",
-    "speaker2": "A 55-year-old resident goes to Harborview Medical Center later that day. He died Feb. 26 but was not linked to COVID-19 until later.",
+    "speaker2": "74-year-old male Shortness of breath, low oxygen",
     "mp3_2": "1450-trim.mp3",
     "vtt2": "1450-captions.vtt",
+    "speaker3": "90-year-old female Difficulty breathing, low oxygen, high heart rate ",
     "mp3_3": "1467-trim.mp3",
     "vtt3": "1467-captions.vtt",
     "cases": 9,
@@ -109,7 +113,7 @@
     "url": "http://www.latimes.com/local/lanow/la-me-ln-tehama-shooting-school-response-20171116-htmlstory.html"
   },
   {
-    "year": "2017-2018",
+    "year": "March",
     "date": "3/3/2020",
     "cases": 14,
     "deaths": 11,
@@ -117,7 +121,7 @@
     "url": "https://www.nbcnews.com/news/us-news/aztec-high-school-shooting-gunman-disguised-himself-randomly-killed-school-n827881"
   },
   {
-    "year": "2017-2018",
+    "year": "March",
     "date": "3/4/2020",
     "lifeCare": "No residents still at Life Care had been tested, according to officials.",
     "cases": 25,
@@ -126,7 +130,7 @@
     "url": "https://www.nbcnews.com/news/us-news/aztec-high-school-shooting-gunman-disguised-himself-randomly-killed-school-n827881"
   },
   {
-    "year": "2017-2018",
+    "year": "March",
     "date": "3/5/2020",
     "lifeCare": "Families of Life Care residents hold a news conference to vent frustrations over communication, lack of testing",
     "cases": 28,
@@ -134,7 +138,7 @@
     "url": "https://www.courier-journal.com/story/news/local/2018/01/30/kentucky-school-shooting-marshall-county-sheriff-arrested-teen-suspect/1078539001/"
   },
   {
-    "year": "2017-2018",
+    "year": "March",
     "date": "3/6/2020",
     "cases": 38,
     "deaths": 22,
@@ -142,7 +146,7 @@
     "url": "https://www.nytimes.com/2018/02/14/us/parkland-school-shooting.html"
   },
   {
-    "year": "2017-2018",
+    "year": "March",
     "date": "3/7/2020",
     "lifeCare": "Life Care holds its first press conference and provides numbers indicating the number of deaths and illnesses at the nursing home could be higher than originally thought. A spokesman said not all residents had been tested.\nLife Care obtains enough kits to test all residents that night.",
     "cases": 38,
@@ -151,28 +155,31 @@
     "url": "https://www.nytimes.com/2018/02/14/us/parkland-school-shooting.html"
   },
   {
-    "year": "2017-2018",
+    "year": "March",
     "date": "3/8/2020",
     "cases": 52,
     "deaths": 25
   },
   {
+    "year": "March",
     "date": "3/9/2020",
     "cases": 54,
     "deaths": 26
   },
   {
+    "year": "March",
     "date": "3/10/2020",
     "cases": 85,
     "deaths": 26
   },
   {
+    "year": "March",
     "date": "3/12/2020",
     "cases": 96,
     "deaths": 28
   },
   {
-    "year": "2017-2018",
+    "year": "March",
     "date": "3/14/2020",
     "lifeCare": "University of Washington collects samples from remaining symptomatic employees in the nursing home parking lot.",
     "cases": 120,
@@ -180,7 +187,7 @@
     "url": "https://www.cnn.com/2018/03/09/us/birmingham-school-shooting-teen-charged/index.html"
   },
   {
-    "year": "2017-2018",
+    "year": "March",
     "date": "3/16/2020",
     "lifeCare": "43 of 120 residents remain at Life Care and 30 have tested positive; 102 of 180 employees have shown symptoms (46 positive)",
     "cases": 124,
