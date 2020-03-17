@@ -76,6 +76,26 @@
                    %>
                   <%= t.include("partials/_audio.html", audioData) %>
                 <% } %>
+                <% if (row.mp3_2) {%>
+                  <%
+                  var audioData = {
+                    speaker2: row.speaker2,
+                    mp3_2: "./assets/" + row.mp3_2,
+                    vtt2: "./assets/" + row.vtt2,
+                  }
+                   %>
+                  <%= t.include("partials/_audio2.html", audioData) %>
+                <% } %>
+                <% if (row.mp3_3) {%>
+                  <%
+                  var audioData = {
+                    speaker3: row.speaker3,
+                    mp3_3: "./assets/" + row.mp3_3,
+                    vtt3: "./assets/" + row.vtt3,
+                  }
+                   %>
+                  <%= t.include("partials/_audio3.html", audioData) %>
+                <% } %>
               </td>
 
               <td class="dots">
