@@ -1,6 +1,96 @@
 @import "seattletimes";
 @import "audio";
 
+.flex-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &.header {
+    border-bottom: 2px solid black;
+    margin: 0;
+  }
+}
+.flex-grid .col {
+  flex: 2;
+  border-bottom: 1px solid @df-light-gray;
+  padding: 4px 8px;
+
+  &.date {
+    flex: 0.75;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 4px 8px 4px 0;
+  }
+
+  &.event {
+    flex: 2.5;
+    font-size: 14px;
+  }
+
+  &.dots {
+    flex: 1.5;
+    line-height: 1;
+    background-color: @df-off-white;
+    text-align: center;
+  }
+
+  &.wa {
+    flex: 1.25;
+    font-size: 14px;
+  }
+}
+
+.flex-grid .col-header {
+  flex: 1;
+  font-weight: bold;
+  padding: 20px 20px 10px 20px;
+
+
+  &.event {
+    flex: 2.5;
+  }
+
+  &.key {
+    flex: 1.5;
+    list-style-type: none;
+    text-align: left;      
+    background-color: @df-off-white;
+    font-size: 20px;
+  }
+
+  &.wa {
+    flex: 1.25;
+  }
+
+  &.date {
+    flex: 0.75;
+  }
+
+}
+
+body {
+  padding: 20px;
+}
+.flex-grid { 
+  margin: 0 0 20px 0;
+}
+.col {
+  padding: 20px;
+}
+
+@media (max-width: 400px) {
+  .flex-grid,
+  .flex-grid-thirds {
+    display: block;
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
 h1 {
   text-align: center;
 }
@@ -9,14 +99,6 @@ h1 {
   max-width: 960px;
 }
 
-.key {
-  margin: 0;
-  padding: 0;
-  white-space: nowrap;
-  list-style-type: none;
-  text-align: left;      
-  background-color: @df-off-white;
-}
 
 .shootings {
   border-collapse: collapse;
@@ -29,68 +111,6 @@ h1 {
 
   [data-year="Feb"],
   [data-year="2017-2018"] { background: lighten(#9bb3dc, 20%); }
-
-
-  tr.year-head {
-    th {
-      border-top: 1px solid black;
-      padding: 4px 8px;
-    }
-  }
-
-  .year-head + tr td {
-    border-top: none;
-  }
-
-  td {
-    border-top: 1px solid @df-light-gray;
-    padding: 4px 8px;
-
-    &.date {
-      width: 90px;
-      text-align: center;
-      font-size: 20px;
-      font-weight: bold;
-      vertical-align: text-top;
-    }
-
-    &.dots {
-      max-width: 360px;
-      line-height: 1;
-      background-color: @df-off-white;
-      text-align: center;
-    }
-
-    &.wa {
-      white-space: wrap;
-
-      @media @mobile {
-        white-space: normal;
-      }
-
-      &.first {
-        font-weight: bold;
-      }
-
-      .enrolled {
-        @media @tablet {
-          display: block;
-        }
-
-        &:before {
-          content: "· ";
-          @media @tablet {
-            content: "";
-          }
-        }
-      }
-    }
-  }
-
-  i {
-    display: block;
-    font-size: 15px;
-  }
 
   tr.uncollapse {
     display: none;

@@ -2,171 +2,177 @@
   {
     "year": "Jan",
     "date": "1/21/2020",
-    "wa": "First known case of COVID-19 in U.S."
+    "wa": "First known case of COVID-19 in U.S. announced in Snohomish County.",
+    "url": "https://www.seattletimes.com/seattle-news/health/case-of-wuhan-coronavirus-detected-in-washington-state-first-in-united-states/"
+  },
+  {
+    "year": "Jan",
+    "date": "1/29/2020",
+    "lifeCare": "A Kirkland firefighter is exposed after contact with a patient linked to Life Care, according to a union representative. The firefighter doesn't test positive for COVID-19.\n\nA 911 call is made from the nursing home that day for an 85-year-old woman in respiratory distress.",
+    "speaker": "She's having respiratory distress.",
+    "mp3": "20-685_1-trim.mp3",
+    "vtt": "685-captions.vtt"
+  },
+  {
+    "year": "Feb",
+    "date": "2/8/2020",
+    "lifeCare": "A 911 call is made after a visitor in her 60s has chest and shortness of breath in the nursing home lobby. It's unknown if this is linked to coronavirus.",
+    "speaker": "We have a lady in the lobby that is having chest pain and shortness of breath.",
+    "mp3": "20-927-trim.mp3",
+    "vtt": "927-captions.vtt"
   },
   {
     "year": "Feb",
     "date": "2/10/2020",
-    "lifeCare": "Staff notice an outbreak of respiratory illness.",
+    "lifeCare": "Staff notice an outbreak of respiratory illness and put up warning signs, according to Life Care.",
     "cases": 0
   },
   {
     "year": "Feb",
-    "date": "2/17/2020",
-    "lifeCare": "Resident's son becomes sick with COVID-19 after visiting nursing home.",
-    "cases": 0,
-    "url": "http://www.miamiherald.com/news/local/crime/article4139118.html",
-    "urlWA": "http://www.miamicarolcityshs.org/apps/maps/"
+    "date": "2/18/2020",
+    "lifeCare": "A 56-year-old resident is taken to the hospital with shortness of breath. It's unknown if this is linked to coronavirus.",
+    "speaker": "She's short of breath and her vital signs are a bit elevated now.",
+    "mp3": "20-1168_1-trim.mp3",
+    "vtt": "1168-captions.vtt"
   },
   {
     "year": "Feb",
     "date": "2/19/2020",
-    "lifeCare": "First resident taken to the hospital who later tests positive for COVID-19.\n\nAt the time, Life Care has 120 residents, 180 employees.",
-    "cases": 0,
-    "url": "http://www.startribune.com/man-kills-himself-outside-roseville-montessori-school/289873481/"
+    "lifeCare": "First resident, a 60-year-old man, is hospitalized for COVID-19 symptoms, but doesn't test positive until later.\n\nAnother resident's son becomes sick days after visiting and he later tests positive, according to his family.",
+    "speaker": "He's just had this episode so far, decreased level of consciousness.",
+    "mp3": "20-1190-trim.mp3",
+    "vtt": "1190-captions.vtt",
+    "cases": 0
   },
   {
     "year": "Feb",
     "date": "2/24/2020",
-    "lifeCare": "74-year-old woman is the first resident who tests positive for COVID-19 and dies on March 2.",
-    "audio": "55 year-old man taken to Harborview Medical Center. He died Feb. 26 but was not linked to COVID-19 until later.",
-    "speaker": "A 55-year-old resident goes to Harborview Medical Center later that day. He died Feb. 26 but was not linked to COVID-19 until later.",
-    "mp3": "1298-trim.mp3",
-    "vtt": "1298-captions.vtt",
-    "cases": 0,
-    "url": "https://www.azcentral.com/story/news/local/glendale/breaking/2016/02/12/glendale-independence-high-school-shooting/80282174/"
+    "lifeCare": "A 74-year-old woman is taken to the hospital. She later becomes the first resident to test positive for COVID-19 and dies March 2. \n\nA 55-year-old resident goes to the hospital later that day. He dies Feb. 26 but is not linked to COVID-19 until later.",
+    "speaker": "She's sick... She's shivering.",
+    "mp3": "20-1293-trim-2.mp3",
+    "vtt": "1293-captions.vtt",
+    "speaker2": "Fever, increased breathlessness",
+    "mp3_2": "1298-trim.mp3",
+    "vtt2": "1298-captions.vtt",
+    "cases": 0
   },
   {
     "year": "Feb",
     "date": "2/26/2020",
-    "lifeCare": "Mardi Gras party at Life Care.\n\nAn 86-year-old resident dies after moving to another facility; her death is later linked to COVID-19.",
-    "audio": "92-year-old woman, with pneumonia, difficulty breathing.",
-    "speaker": "92-year-old female Pneumonia, difficulty breathing",
+    "lifeCare": "A Mardi Gras party is held at Life Care.\n\nLife Care notifies the state Department of Health of an increase in respiratory illnesses that day, according to a spokesman. The agency said it did not receive notification.\n\nAn 86-year-old dies at another facility after contracting the virus while a resident at Life Care; her death is later linked to COVID-19.\n\nA resident in her 90s is sent to the hospital that night.",
+    "speaker": "She had pneumonia... she had a hard time breathing.",
     "mp3": "1353-trim-2.mp3",
     "vtt": "1353-captions.vtt",
-    "deaths": 2,
-    "url": "https://www.bostonglobe.com/metro/2016/06/22/suspects-arrested-slaying-outside-jeremiah-burke-high-school/ya7CScdnIdMqjoZSJrYw3N/story.html"
+    "deaths": 2
   },
   {
     "year": "Feb",
     "date": "2/27/2020",
-    "lifeCare": "Life Care Center notifies Public Health - Seattle & King County of an increase in respiratory illness, but has no details about the illness or number of people affected.",
-    "audio": "74-year-old woman, difficulty breathing.",
-    "speaker": "A Life Care employee calls 911 to report a 74-year-old resident had difficulty breathing.",
+    "lifeCare": "Life Care Center and EvergreenHealth separately notify county health officials of a spike in respiratory illness from the nursing home.\n\nTwo more residents are sent to the hospital with breathing trouble.",
+    "speaker": "So she can't speak in full sentences?",
     "mp3": "1366-trim-2.mp3",
     "vtt": "1366-captions.vtt",
-    "speaker2": "A Life Care employees calls 911 to report a resident in her 80s has a fever and difficulty breathing.",
+    "speaker2": "She's also sweating, clammy, having a hard time breathing.",
     "mp3_2": "1369-trim-2.mp3",
     "vtt2": "1369-captions.vtt",
     "deaths": 2,
-    "wa": "The CDC expands testing critieria - previously focused on international travel - to people with unexplained severe symptoms not linked to the flu. Evergreen hospital alerts public health officials that multiple patients have come from Life Care Center, including one with symptoms suspected to be COVID-19.",
-    "url": "https://www.cnn.com/2016/09/08/us/texas-high-school-shooting/index.html"
+    "wa": "The CDC expands testing critieria - previously focused on international travel - to people with unexplained severe symptoms not linked to the flu."
   },
   {
-    "year": "2016-2017",
+    "year": "Feb",
     "date": "2/28/2020",
-    "audio": "87 or 88-year-old woman, fever, difficulty breathing.",
+    "lifeCare": "Officials learn 20 residents are ill, with negative flu test results. A resident in her 80s with pneumonia is sent to the hospital with difficulty breathing.\n\nCOVID-19 test results for a Life Care resident and employee come back positive. King County officials contact the state and U.S. Centers for Disease Control and Prevention.",
+    "mp3": 1379,
     "deaths": 2,
-    "wa": "Public Health learns 20 residents are ill and tested negative for the flu. Another hospital reports a Life Care-related case. Shoreline lab begins testing. Preliminary test results come back positive for four cases, including two Life Care residents. County health officials contact the CDC and state officials.",
-    "url": "https://www.greenvilleonline.com/story/news/crime/2016/09/28/shooting-reported-townville-elementary/91227346/"
+    "wa": "Expanded testing begins at the state Department of Health's lab in Shoreline.\r\n\r\nTwo police officers and 25 firefighters are quarantined after responding to calls involving Life Care patients.",
+    "url": "https://www.seattletimes.com/seattle-news/health/some-kirkland-firefighters-who-responded-to-early-cases-of-novel-coronavirus-have-flu-like-symptoms-city-says/"
   },
   {
     "year": "Feb",
     "date": "2/29/2020",
-    "lifeCare": "A handful of CDC staff arrive. Public Health announce the first two COVID-19: A resident in her 70s and employee in her 40s. A man in his 70s dies at EvergreenHealth; his death is announced the next day.",
-    "audio": "79-year-old woman, fever, low oxygen, difficulty breathing.",
-    "speaker": "79-year-old female Fever, low oxygen, difficulty breathing",
+    "lifeCare": "King County announces first COVID-19 cases from Life Care: a resident in her 70s and employee in her 40s. \n\nA man in his 70s dies at EvergreenHealth. Announced the next day, it's the first known death connected to Life Care. \n\nA 79-year-old woman is taken to the hospital with a fever and difficulty breathing.",
+    "speaker": "This is the place that has the coronavirus.",
     "mp3": "1413_R-trim-2.mp3",
     "vtt": "1413-captions-2.vtt",
     "cases": 2,
-    "deaths": 3,
-    "url": "https://www.sbsun.com/2018/04/09/north-park-elementary-looking-back-at-the-san-bernardino-school-shooting-1-year-later/"
+    "deaths": 3
   },
   {
     "year": "March",
     "date": "3/1/2020",
-    "lifeCare": "Public Health announces new cases linked to Life Care, bringing the total to six, including one death.",
-    "audio": "63-year-old man, difficulty breathing, turning blue.",
-    "speaker": "63-year-old male Difficulty breathing, turning blue",
+    "lifeCare": "Public Health announces new Life Care cases, bringing total to four, including one death.\n\nAnother resident, a man in his 60s, is taken to the hospital.",
+    "speaker": "He's turning blue, he's having a hard time breathing.",
     "mp3": "1436-trim.mp3",
     "vtt": "1436-captions.vtt",
     "cases": 6,
-    "deaths": 7,
-    "url": "http://www.spokesman.com/stories/2017/sep/14/rockford-nightmare-freeman-high-school-shooting-le/#/0"
+    "deaths": 7
   },
   {
     "year": "March",
     "date": "3/2/2020",
-    "audio": "90-year-old woman, drowsy, hypoxic (difficulty breathing, low oxygen).",
-    "speaker": "90-year-old female Drowsy, hypoxic (difficulty breathing, low oxygen)",
+    "lifeCare": "Three residents, two 90-year-old women and a 74-year-old man, are taken to the hospital.",
+    "speaker": "She has been exposed to someone with the coronavirus, is that correct?",
     "mp3": "1449-trim-2.mp3",
     "vtt": "1449-captions.vtt",
-    "speaker2": "74-year-old male Shortness of breath, low oxygen",
+    "speaker2": "We've had a couple coronavirus cases.",
     "mp3_2": "1450-trim.mp3",
     "vtt2": "1450-captions.vtt",
-    "speaker3": "90-year-old female Difficulty breathing, low oxygen, high heart rate ",
+    "speaker3": "Patient was having difficulty breathing, dry cough as well.",
     "mp3_3": "1467-trim.mp3",
     "vtt3": "1467-captions.vtt",
     "cases": 9,
-    "deaths": 9,
-    "url": "http://www.latimes.com/local/lanow/la-me-ln-tehama-shooting-school-response-20171116-htmlstory.html"
+    "deaths": 9
   },
   {
     "year": "March",
     "date": "3/3/2020",
     "cases": 14,
     "deaths": 11,
-    "wa": "CDC lifts all restrictions on who can get tested",
-    "url": "https://www.nbcnews.com/news/us-news/aztec-high-school-shooting-gunman-disguised-himself-randomly-killed-school-n827881"
+    "wa": "CDC lifts all restrictions on who can get tested."
   },
   {
     "year": "March",
     "date": "3/4/2020",
-    "lifeCare": "No residents still at Life Care had been tested, according to Public Health Seattle & King County.",
+    "lifeCare": "None of the residents remaining at the nursing have been tested, but they will be soon, according to Public Health - Seattle & King County. “They likely have been infected or are at high risk for infection,\" said health officer Dr. Jeff Duchin.",
     "cases": 25,
-    "deaths": 13,
-    "wa": "Health officer Jeff Duchin from Public Health - Seattle & King County says the county is working to get everyone at Life Care tested. “They likely have been infected or are at high risk for infection.”",
-    "url": "https://www.nbcnews.com/news/us-news/aztec-high-school-shooting-gunman-disguised-himself-randomly-killed-school-n827881"
+    "deaths": 13
   },
   {
     "year": "March",
     "date": "3/5/2020",
-    "lifeCare": "Families of Life Care residents hold a news conference to vent frustrations over communication, lack of testing.",
+    "lifeCare": "Residents' families hold a news conference to vent frustrations over communication, lack of testing.",
     "cases": 28,
     "deaths": 17,
-    "url": "https://www.courier-journal.com/story/news/local/2018/01/30/kentucky-school-shooting-marshall-county-sheriff-arrested-teen-suspect/1078539001/"
+    "url": "https://www.seattletimes.com/seattle-news/families-of-nursing-home-residents-at-center-of-coronavirus-outbreak-demand-answers/"
   },
   {
     "year": "March",
     "date": "3/6/2020",
+    "lifeCare": "A federal medical disaster team arrives at Life Care.",
     "cases": 38,
     "deaths": 22,
-    "wa": "Inslee agrees to set up incident-command structure for nursing homes that experience outbreaks federal natural-disaster team arrives.",
-    "url": "https://www.nytimes.com/2018/02/14/us/parkland-school-shooting.html"
+    "wa": "Inslee agrees to set up an incident-command structure for nursing homes that experience outbreaks."
   },
   {
     "year": "March",
     "date": "3/7/2020",
-    "lifeCare": "Life Care holds its first press conference, indicating the number of deaths and illnesses could be higher than originally thought. A spokesman said not all residents had been tested.\n\nLife Care obtains enough kits to test all residents that night.",
+    "lifeCare": "Life Care holds its first news conference. A spokesman says not all residents have been tested, and the number of deaths and illnesses could be higher than originally thought. \n\nLife Care obtains enough kits to test all residents that night.  \n\nWashington state Department of Social and Health Services and U.S. Centers for Medicare and Medicaid Services enters Life Care to begin investigation.",
     "cases": 38,
     "deaths": 22,
-    "wa": "Washington state Department of Social and Health Services and U.S. Centers for Medicare and Medicaid Services enter Life Care to begin investigation.",
-    "url": "https://www.nytimes.com/2018/02/14/us/parkland-school-shooting.html"
+    "url": "https://www.seattletimes.com/seattle-news/coronavirus-cases-may-be-higher-than-reported-at-kirkland-nursing-home/"
   },
   {
     "year": "March",
     "date": "3/14/2020",
-    "lifeCare": "University of Washington collects samples from remaining symptomatic employees in the nursing home parking lot.",
+    "lifeCare": "University of Washington collects samples from remaining symptomatic Life Care employees in the nursing home parking lot.",
     "cases": 120,
-    "deaths": 29,
-    "url": "https://www.cnn.com/2018/03/09/us/birmingham-school-shooting-teen-charged/index.html"
+    "deaths": 29
   },
   {
     "year": "March",
     "date": "3/16/2020",
-    "lifeCare": "43 of 120 residents remain at Life Care and 30 have tested positive; 102 of 180 employees have shown symptoms (46 positive)",
+    "lifeCare": "Of 120 residents at Life Care on Feb. 19, 43 remain in the nursing home and 30 have tested positive for COVID-19. \n\nOf 180 employees, 102 have shown symptoms and 46 have tested positive.",
     "cases": 124,
-    "deaths": 29,
-    "url": "https://www.cnn.com/2018/03/27/us/maryland-school-shooting-cause-of-death-trnd/index.html"
+    "deaths": 29
   }
 ]
