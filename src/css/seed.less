@@ -14,19 +14,33 @@
 .flex-grid .col {
   flex: 2;
   border-bottom: 1px solid @df-light-gray;
-  padding: 4px 8px;
+  padding: 10px;
+
+    @media @mobile {
+      border-bottom: none;
+      padding: 0;
+    }
 
   &.date {
     flex: 0.75;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     font-weight: bold;
     padding: 4px 8px 4px 0;
+
+    @media @mobile {
+      border-top: 1px solid @df-light-gray;
+    }
   }
 
   &.event {
     flex: 2.5;
     font-size: 14px;
+    background-color: @df-off-white;
+
+    @media @mobile {
+      background-color: white;
+    }
   }
 
   &.dots {
@@ -34,22 +48,28 @@
     line-height: 1;
     background-color: @df-off-white;
     text-align: center;
+
+    @media @mobile {
+      background-color: white;
+      text-align: left;
+    }
   }
 
   &.wa {
     flex: 1.25;
     font-size: 14px;
   }
+
 }
 
 .flex-grid .col-header {
   flex: 1;
   font-weight: bold;
-  padding: 20px 20px 10px 20px;
-
+  padding: 10px;
 
   &.event {
     flex: 2.5;
+    background-color: @df-off-white;
   }
 
   &.key {
@@ -58,6 +78,11 @@
     text-align: left;      
     background-color: @df-off-white;
     font-size: 20px;
+
+    @media @mobile {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
   }
 
   &.wa {
@@ -66,8 +91,9 @@
 
   &.date {
     flex: 0.75;
+    text-align: left;
+    padding-left: 0px;
   }
-
 }
 
 body {
@@ -80,7 +106,7 @@ body {
   padding: 20px;
 }
 
-@media (max-width: 400px) {
+@media @mobile {
   .flex-grid,
   .flex-grid-thirds {
     display: block;
@@ -93,12 +119,21 @@ body {
 
 h1 {
   text-align: center;
+
+  @media @mobile {
+    font-size: 28px;
+  }
+}
+
+p {
+  @media @mobile {
+    font-size: 16px;
+  }
 }
 
 .interactive {
   max-width: 960px;
 }
-
 
 .shootings {
   border-collapse: collapse;
@@ -149,13 +184,14 @@ h1 {
   margin: 1px;
 
   &.death {
-    background: @df-dark-gray;
+    border: 1px solid black;
+    background: #D1912E;
     border-radius: 10px;
   }
 
   &.case {
-    border: 1px solid @df-middle-gray;
-    background: @df-light-gray;
+    border: 1px solid @df-dark-gray;
+    background: #f5c46b;
     border-radius: 10px;
   }
 }
@@ -179,5 +215,24 @@ h1 {
   p {
     margin: 0;
     padding: 0;
+    
+    @media @mobile {
+      font-size: 12px;
+      display: block;
+    }
+  }
+}
+
+.mobile-invisible {
+  @media @mobile {
+    display: none;
+  }
+}
+
+.mobile-visible {
+  display: none;
+
+  @media @mobile {
+    display: block;
   }
 }

@@ -14,15 +14,15 @@
         <p>
           The U.S. first COVID-19 death was announced at the Kirkland nursing home Feb. 29, but 911 calls and interviews suggest it had been spreading there for weeks.
         </p>
-        <div class= "flex-grid header">
+        <div class= "flex-grid header mobile-invisible">
           <div class="col-header date">Date</div>
-          <div class="col-header event">Inside Life Care</div>
-          <div class="col-header key"><li> <div class="case dot"></div> Confirmed cases
-            <li> <div class="death dot"></div> Deaths</div>
+          <div class="col-header event">Inside Life Care:</div>
+          <div class="col-header key"><li> <div class="case dot"></div> Total confirmed cases
+            <li> <div class="death dot"></div> Total deaths</div>
           <div class="col-header wa">Outside of Life Care</div>
           </div>
-          <div class= "flex-grid">
 
+        <div class= "flex-grid">
             <%
             var moment = require("moment");
             var toMomentObj = function(str) {
@@ -40,16 +40,13 @@
             };
             <!-- console.log(JSON.stringify(json.timeline)); -->
             var rows = json.timeline;
-  
             var currentYear = null;
             %>
   
             <% rows.forEach(function(row) {
                  if (row.Year !== currentYear) {
                    currentYear = row.Year; %>
-              <tr data-year="<%= row.Year %>" class="year-head">
             <%= row.Year %>
-              </tr>
               <% } %>
 
         <table class="shootings collapsed">
@@ -57,9 +54,16 @@
             <div class="col date">
               <%= formatDate(row.date) %></div>
             <div class="col event">
+              <% if (row.lifeCare) { %>
+                <div class="mobile-visible">
+                  <b>Inside Life Care:</b>
+                </div>
+              <% } %>
                 <%= row.lifeCare %>
-                  <% if (row.url) { %>
-                  <% } %>
+                <% if (row.url) { %>
+                  <a href="<%= row.url %>" target="_blank"></a>
+                <% } %>
+
                 <% if (row.mp3) {%>
                   <%
                   var audioData = {
@@ -90,7 +94,15 @@
                    %>
                   <%= t.include("partials/_audio3.html", audioData) %>
                 <% } %></div>
+
             <div class="col dots">
+                    <% if (row.deaths) { %>
+                      <div class="col-header key mobile-visible">
+                        <li>KEY</li>
+                        <li><div class="case dot"></div> Total confirmed cases</li>
+                        <li><div class="death dot"></div> Total deaths</li>
+                      </div>
+                    <% } %>
                   <% for (var i = 0; i < row.cases; i++) { %>
                     <div class="case dot"></div>
                   <% } %>
@@ -99,15 +111,17 @@
                     <div class="death dot"></div>
                   <% } %>
             </div>
+
             <div class="col wa">
-                <% if (row.url) { %>
-                  <a href="<%= row.url %>" target="_blank"></a>
-                <% } %>
+              <% if (row.urlWA) { %>
+              <div class="mobile-visible">
+                <b>Outside of Life Care:</b>
+              </div>
+              <% } %>
                 <%= row.wa %>
-                <% if (row.urlWA) { %>
-                  <a href="<%= row.url %>" target="_blank">
-                  </a>
-                <% } %>
+                  <% if (row.urlWA) { %>
+                    <a href="<%= row.urlWA %>" target="_blank"></a>
+                  <% } %>
           </div>
           <% }) %>
             <!-- <tr class="uncollapse" tabindex=0 role="button">
@@ -120,7 +134,7 @@
 
         <div class="source">
           <div>
-            <p>*Confirmed cases do include deaths</p>
+            <p>Note: All confirmed cases include deaths and only include residents, employees and visitors of Life Care during those times.</p>
             <p>XXX</p>
             <p>Sources: Life Care Center of Kirkland, King County Public Health, Snohomish Public Health, Times reporting</p>
           </div>

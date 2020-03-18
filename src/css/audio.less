@@ -11,7 +11,7 @@
   max-width: 630px;
   position: relative;
   width: 100%;
-  padding: 20px 0;
+  padding: 0 0 15px 0;
   margin: auto;
 
   audio {
@@ -26,10 +26,10 @@
 
   .transcript-box {
     font-weight: bold;
-    color: #C75824;
+    color: #a33f00;
     position: relative;
     // min-height: 20vh;
-    padding: 10px 40px 20px 40px;
+    padding: 10px 40px 8px 40px;
     text-align: center;
 
     transition: all .3s linear;
@@ -37,7 +37,7 @@
 
     @media @mobile {
       // padding: 32px 16px;
-      padding: 0px 20px 10px 20px;
+      padding: 0px 20px 5px 20px;
     }
 
     &.paused {
@@ -60,10 +60,9 @@
         font-size: 18px;
         color: #C75824;
         display: inline-block;
-        padding: 4px 16px;
         @media @mobile {
-          font-size: 15px;
-          padding: 0px 0px 10px 0px;
+          padding-top: 10px;
+          font-size: 16px;
         }
         &:before {
           content: "“";
