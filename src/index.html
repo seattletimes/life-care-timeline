@@ -3,6 +3,7 @@
   <head>
     <%= t.include("partials/_head.html", grunt.data.json) %>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
 
@@ -12,12 +13,12 @@
 
         <h1>Coronavirus at the Life Care nursing home</h1>
         <p>
-          The first confirmed COVID-19 deaths from Life Care Center of Kirkland occurred on Feb. 26, but interviews and 911 calls obtained by The Seattle Times show the disease had been spreading there for weeks. At least 67 of the nursing home’s 120 residents have tested positive, including 29 who have died. A visitor to the nursing home also died, and 46 employees have tested positive, with more tests pending.
+          The first confirmed COVID-19 deaths from Life Care Center of Kirkland occurred on Feb. 26. Interviews and 911 calls obtained by The Seattle Times show the disease had been spreading there for weeks. At least 142 cases among residents, staff and visitors had been connected to Life Care Center by Wednesday, including 34 residents and one visitor who died.
         </p>
         
         <div class= "flex-grid header mobile-invisible">
           <div class="col-header date">Date</div>
-          <div class="col-header event">Inside Life Care:</div>
+          <div class="col-header event">Inside Life Care</div>
           <div class="col-header key">
             <li> <div class="case dot"></div> Total confirmed cases</li>
             <li> <div class="death dot"></div> Total deaths</li>
@@ -91,6 +92,15 @@
                 %>
                 <%= t.include("partials/_audio3.html", audioData) %>
               <% } %>
+
+              <% if (row.videoText) { %>
+                <br>
+                <a href="<%= row.video %>" target="_blank">VIDEO <i class="fa fa-caret-square-o-right"></i>
+              <% } %>
+                <i><%= row.videoText %></i>
+              <% if (row.videoText) { %>
+                </a>
+              <% } %>
             </div>
 
             <div class="col dots">
@@ -123,24 +133,38 @@
               <% if (row.urlWA) { %>
                 </a>
               <% } %>
+
+              <% if (row.videoWaText) { %>
+                <br>
+                <a href="<%= row.videoWA %>" target="_blank">VIDEO <i class="fa fa-caret-square-o-right"></i>
+              <% } %>
+                <i><%= row.videoWaText %></i>
+              <% if (row.videoWaText) { %>
+                </a>
+              <% } %>
             </div>
           </div>
         <% }) %>
 
         <button id="uncollapseButton">Show more</button>
       </div>
-
+      <div class="flex-grid">
         <div class="source">
           <div>
-            <p>Note: All confirmed cases include deaths and only include those linked to residents, employees and visitors of Life Care.</p>
-            <p>XXX</p>
-            <p>Sources: Life Care Center of Kirkland, King County Public Health, Snohomish Public Health, North East King County Regional Public Safety Communications Agency, Times reporting</p>
+            <p>Note: All confirmed cases include deaths and only include those linked to residents, employees and visitors of Life Care.
+            <p>Numbers include cases from multiple counties. The number of confirmed cases is likely an undercount and relies on information from local health departments, Life Care and the CDC, which did not provide consistent data on cases for the entire time period. Deaths have been confirmed by Public Health — Seattle & King County as related to COVID-19 and are based on when the patient died, not when their death was announced.
+            <br>
+            The number of known cases jumped March 9, when the CDC provided more accurate data.
+            </p>
+            <br>
+            <p>Sources: Life Care Center of Kirkland, Public Health — Seattle & King County, Snohomish Health District, North East King County Regional Public Safety Communication Agency, Seattle Times reporting</p>
           </div>
-          <div class="credit">
-            <p>Design and development: Emily M. Eng</p>
-            <P>Audio editing and reporting: Lauren Frohne</P>
-            <p>Research and reporting: Asia Fields and Mary Hudetz</p>
-          </div>
+        </div>
+        <div class="credit">
+          <p>Design and development: Emily M. Eng
+          <br>Audio editing and reporting: Lauren Frohne
+          <br>Research and reporting: Asia Fields and Mary Hudetz</p>
+        </div>
       </main>
     </responsive-child>
 

@@ -16,7 +16,7 @@
   {
     "year": "Feb",
     "date": "2/8/2020",
-    "lifeCare": "A 911 call is made after a visitor in her 60s has chest and shortness of breath in the nursing home lobby. It's unknown if this is linked to coronavirus.",
+    "lifeCare": "A 911 call is made after a visitor in her 60s has chest pain and shortness of breath in the nursing home lobby. It's unknown if this is linked to coronavirus.",
     "speaker": "We have a lady in the lobby that is having chest pain and shortness of breath.",
     "mp3": "20-927-trim.mp3",
     "vtt": "927-captions.vtt"
@@ -95,7 +95,9 @@
     "mp3": "1413_R-trim-2.mp3",
     "vtt": "1413-captions-2.vtt",
     "cases": 2,
-    "deaths": 3
+    "deaths": 3,
+    "videoWaText": "EvergreenHealth and Public Health officials provide update on coronavirus infections and first death in King County",
+    "videoWA": "https://www.seattletimes.com/video/6137295857001/update-on-novel-coronavirus-infections-and-death-in-king-county"
   },
   {
     "year": "March",
@@ -121,21 +123,27 @@
     "mp3_3": "1467-trim.mp3",
     "vtt3": "1467-captions.vtt",
     "cases": 9,
-    "deaths": 9
+    "deaths": 9,
+    "videoWaText": "Governor Inslee expresses condolences for novel coronavirus deaths",
+    "videoWA": "https://www.seattletimes.com/video/6137809213001/governor-inslee-expresses-condolences-for-novel-coronavirus-deaths"
   },
   {
     "year": "March",
     "date": "3/3/2020",
     "cases": 14,
     "deaths": 11,
-    "wa": "CDC lifts all restrictions on who can get tested."
+    "wa": "CDC lifts all restrictions on who can get tested.",
+    "videoWaText": "Coronavirus samples tested at UW Medicine Virology Lab",
+    "videoWA": "https://www.seattletimes.com/video/6138786644001/coronavirus-samples-tested-at-uw-medicine-virology-lab"
   },
   {
     "year": "March",
     "date": "3/4/2020",
     "lifeCare": "None of the residents remaining at the nursing have been tested, but they will be soon, according to Public Health - Seattle & King County. “They likely have been infected or are at high risk for infection,\" said health officer Dr. Jeff Duchin.",
     "cases": 25,
-    "deaths": 13
+    "deaths": 13,
+    "videoText": "Mike Weatherill speaks about his mother who died on March 4: \"Everybody just moved too slow\"",
+    "video": "https://www.seattletimes.com/video/6138873797001/mike-weatherill-everybody-just-moved-too-slow"
   },
   {
     "year": "March",
@@ -143,7 +151,9 @@
     "lifeCare": "Residents' families hold a news conference to vent frustrations over communication, lack of testing.",
     "cases": 30,
     "deaths": 17,
-    "url": "https://www.seattletimes.com/seattle-news/families-of-nursing-home-residents-at-center-of-coronavirus-outbreak-demand-answers/"
+    "url": "https://www.seattletimes.com/seattle-news/families-of-nursing-home-residents-at-center-of-coronavirus-outbreak-demand-answers/",
+    "videoText": "Families of residents at Kirkland nursing home decry response to coronavirus outbreak",
+    "video": "https://www.seattletimes.com/video/6139089616001/families-of-residents-at-kirkland-nursing-home-decry-response-to-coronavirus-outbreak"
   },
   {
     "year": "March",
@@ -159,7 +169,9 @@
     "lifeCare": "Life Care holds its first news conference. A spokesman says not all residents have been tested, and the number of deaths and illnesses could be higher than originally thought. \n\nLife Care obtains enough kits to test all residents that night.  \n\nWashington state Department of Social and Health Services and U.S. Centers for Medicare and Medicaid Services enters Life Care to begin investigation.",
     "cases": 48,
     "deaths": 22,
-    "url": "https://www.seattletimes.com/seattle-news/coronavirus-cases-may-be-higher-than-reported-at-kirkland-nursing-home/"
+    "url": "https://www.seattletimes.com/seattle-news/coronavirus-cases-may-be-higher-than-reported-at-kirkland-nursing-home/",
+    "videoText": "Life Care Center spokesperson: Coronavirus is \"volatile, unpredictable\"",
+    "video": "https://www.seattletimes.com/video/6139376705001/coronavirus-is-volatile-unpredictable"
   },
   {
     "year": "March",
@@ -171,8 +183,10 @@
   {
     "year": "March",
     "date": "3/16/2020",
-    "lifeCare": "Of 120 residents at Life Care on Feb. 19, 43 remain in the nursing home and 30 have tested positive for COVID-19. \n\nOf 180 employees, 102 have shown symptoms and 46 have tested positive.\n\nIn total, 124 confirmed cases, including 29 deaths, have been directly linked to Life Care Center of Kirkland.",
+    "lifeCare": "Of 120 residents at Life Care on Feb. 19, 43 remain in the nursing home and 30 have tested positive for COVID-19. \n\nOf 180 employees, 102 have shown symptoms and over 45 have tested positive.\n\nIn total, 124 confirmed cases, including 29 deaths, have been directly linked to Life Care Center of Kirkland.",
     "cases": 142,
-    "deaths": 29
+    "deaths": 29,
+    "videoWaText": "Gov. Inslee to shut down restaurants and bars to help slow spread of coronavirus",
+    "videoWA": "https://www.seattletimes.com/video/6142082202001/gov-inslee-to-shut-down-restaurants-and-bars-to-help-slow-spread-of-coronavirus-in-washington-state"
   }
 ]
