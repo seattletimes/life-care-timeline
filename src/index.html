@@ -14,122 +14,116 @@
         <p>
           The U.S. first COVID-19 death was announced at the Kirkland nursing home Feb. 29, but 911 calls and interviews suggest it had been spreading there for weeks.
         </p>
+        
         <div class= "flex-grid header mobile-invisible">
           <div class="col-header date">Date</div>
           <div class="col-header event">Inside Life Care:</div>
-          <div class="col-header key"><li> <div class="case dot"></div> Total confirmed cases
-            <li> <div class="death dot"></div> Total deaths</div>
-          <div class="col-header wa">Outside of Life Care</div>
+          <div class="col-header key">
+            <li> <div class="case dot"></div> Total confirmed cases</li>
+            <li> <div class="death dot"></div> Total deaths</li>
           </div>
+          <div class="col-header wa">Outside of Life Care</div>
+        </div>
 
-        <div class= "flex-grid">
-            <%
-            var moment = require("moment");
-            var toMomentObj = function(str) {
-              var [month, day, year] = str.split("/").map(Number);
-              return moment(new Date(year, month - 1, day));
-            };
-            var apShortMonth = new Set([1, 2, 8, 9, 10, 11, 12]);
-            var formatDate = function(str) {
-              var useShort = apShortMonth.has(Number(str.split("/")[0]))
-              return toMomentObj(str).format(`${useShort ? 'MMM.' : 'MMMM'} D`);
-            };
-            var compareDate = function(rowA, rowB) {
-              var [momentA, momentB] = [toMomentObj(rowA.date), toMomentObj(rowB.date)];
-              return momentA.valueOf() - momentB.valueOf();
-            };
-            <!-- console.log(JSON.stringify(json.timeline)); -->
-            var rows = json.timeline;
-            var currentYear = null;
-            %>
-  
-            <% rows.forEach(function(row) {
-                 if (row.Year !== currentYear) {
-                   currentYear = row.Year; %>
-            <%= row.Year %>
-              <% } %>
+        <div class= "flex-grid shootings collapsed">
+        <%
+        var moment = require("moment");
+        var toMomentObj = function(str) {
+          var [month, day, year] = str.split("/").map(Number);
+          return moment(new Date(year, month - 1, day));
+        };
+        var apShortMonth = new Set([1, 2, 8, 9, 10, 11, 12]);
+        var formatDate = function(str) {
+          var useShort = apShortMonth.has(Number(str.split("/")[0]))
+          return toMomentObj(str).format(`${useShort ? 'MMM.' : 'MMMM'} D`);
+        };
+        var rows = json.timeline;
+        %>
 
-        <table class="shootings collapsed">
-
+        <%
+        rows.forEach(function(row) {
+        %>
+          <div class="flex-grid-row">
             <div class="col date">
-              <%= formatDate(row.date) %></div>
+              <%= formatDate(row.date) %>
+            </div>
             <div class="col event">
               <% if (row.lifeCare) { %>
                 <div class="mobile-visible">
                   <b>Inside Life Care:</b>
                 </div>
               <% } %>
+              <% if (row.url) { %>
+                <a href="<%= row.url %>" target="_blank">
+              <% } %>
                 <%= row.lifeCare %>
-                <% if (row.url) { %>
-                  <a href="<%= row.url %>" target="_blank"></a>
-                <% } %>
+              <% if (row.url) { %>
+                </a>
+              <% } %>
 
-                <% if (row.mp3) {%>
-                  <%
-                  var audioData = {
-                    speaker: row.speaker,
-                    mp3: "./assets/" + row.mp3,
-                    vtt: "./assets/" + row.vtt,
-                  }
-                   %>
-                  <%= t.include("partials/_audio.html", audioData) %>
-                <% } %>
-                <% if (row.mp3_2) {%>
-                  <%
+              <% if (row.mp3) {%>
+                <%
+                var audioData = {
+                  speaker: row.speaker,
+                  mp3: "./assets/" + row.mp3,
+                  vtt: "./assets/" + row.vtt,
+                }
+                %>
+                <%= t.include("partials/_audio.html", audioData) %>
+              <% } %>
+              <% if (row.mp3_2) {%>
+                <%
                   var audioData = {
                     speaker2: row.speaker2,
                     mp3_2: "./assets/" + row.mp3_2,
                     vtt2: "./assets/" + row.vtt2,
                   }
-                   %>
-                  <%= t.include("partials/_audio2.html", audioData) %>
-                <% } %>
-                <% if (row.mp3_3) {%>
-                  <%
+                %>
+                <%= t.include("partials/_audio2.html", audioData) %>
+              <% } %>
+              <% if (row.mp3_3) {%>
+                <%
                   var audioData = {
                     speaker3: row.speaker3,
                     mp3_3: "./assets/" + row.mp3_3,
                     vtt3: "./assets/" + row.vtt3,
                   }
-                   %>
-                  <%= t.include("partials/_audio3.html", audioData) %>
-                <% } %></div>
+                %>
+                <%= t.include("partials/_audio3.html", audioData) %>
+              <% } %>
+            </div>
 
             <div class="col dots">
-                    <% if (row.deaths) { %>
-                      <div class="col-header key mobile-visible">
-                        <li>KEY</li>
-                        <li><div class="case dot"></div> Total confirmed cases</li>
-                        <li><div class="death dot"></div> Total deaths</li>
-                      </div>
-                    <% } %>
-                  <% for (var i = 0; i < row.cases; i++) { %>
-                    <div class="case dot"></div>
-                  <% } %>
-
-                  <% for (var i = 0; i < row.deaths; i++) { %>
-                    <div class="death dot"></div>
-                  <% } %>
+              <% if (row.deaths) { %>
+                <div class="col-header key mobile-visible">
+                  <li>KEY</li>
+                  <li><div class="case dot"></div> Total confirmed cases</li>
+                  <li><div class="death dot"></div> Total deaths</li>
+                </div>
+              <% } %>
+              <% for (var i = 0; i < row.cases; i++) { %>
+                <div class="case dot"></div>
+              <% } %>
+              <% for (var i = 0; i < row.deaths; i++) { %>
+                <div class="death dot"></div>
+              <% } %>
             </div>
 
             <div class="col wa">
               <% if (row.urlWA) { %>
-              <div class="mobile-visible">
-                <b>Outside of Life Care:</b>
-              </div>
+                <div class="mobile-visible">
+                  <b>Outside of Life Care:</b>
+                </div>
               <% } %>
-                <%= row.wa %>
-                  <% if (row.urlWA) { %>
-                    <a href="<%= row.urlWA %>" target="_blank"></a>
-                  <% } %>
+              <%= row.wa %>
+              <% if (row.urlWA) { %>
+                <a href="<%= row.urlWA %>" target="_blank"></a>
+              <% } %>
+            </div>
           </div>
-          <% }) %>
-            <!-- <tr class="uncollapse" tabindex=0 role="button">
-              <td colspan="99">
-                Show more
-              </td>
-            </tr>
-        </table> -->
+        <% }) %>
+
+        <button id="uncollapseButton">Show more</button>
       </div>
 
         <div class="source">

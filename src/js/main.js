@@ -6,7 +6,7 @@ require("component-responsive-frame/child");
 var $ = require("./lib/qsa");
 require("./audio");
 
-var uncollapseButton = $.one(".uncollapse");
+var uncollapseButton = $.one("#uncollapseButton");
 var uncollapse = function uncollapse() {
   $.one(".shootings").classList.remove("collapsed");
 };
