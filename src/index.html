@@ -115,9 +115,13 @@
                   <b>Outside of Life Care:</b>
                 </div>
               <% } %>
-              <%= row.wa %>
+
               <% if (row.urlWA) { %>
-                <a href="<%= row.urlWA %>" target="_blank"></a>
+                <a href="<%= row.urlWA %>" target="_blank">
+              <% } %>
+                <%= row.wa %>
+              <% if (row.urlWA) { %>
+                </a>
               <% } %>
             </div>
           </div>
