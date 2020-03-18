@@ -8,7 +8,7 @@
   {
     "year": "Jan",
     "date": "1/29/2020",
-    "lifeCare": "A Kirkland firefighter is exposed after contact with a patient linked to Life Care, according to a union representative. The firefighter doesn't test positive for COVID-19.\n\nA 911 call is made from the nursing home that day for an 85-year-old woman in respiratory distress.",
+    "lifeCare": "A 911 call is made from the nursing home that day for an 85-year-old woman in respiratory distress.\n   \nAccording to a union representative, a Kirkland firefighter is exposed after contact with a patient linked to Life Care. The firefighter doesn't test positive for COVID-19.\n\n",
     "speaker": "She's having respiratory distress.",
     "mp3": "20-685_1-trim.mp3",
     "vtt": "685-captions.vtt"
@@ -38,7 +38,7 @@
   {
     "year": "Feb",
     "date": "2/19/2020",
-    "lifeCare": "First resident, a 60-year-old man, is hospitalized for COVID-19 symptoms, but doesn't test positive until later.\n\nAnother resident's son becomes sick days after visiting and he later tests positive, according to his family.",
+    "lifeCare": "A 60-year-old man becomes first known resident to be hospitalized for COVID-19 symptoms, but doesn't test positive until later. \n\nAnother resident's son becomes sick days after visiting and he later tests positive, according to his family.",
     "speaker": "He's just had this episode so far, decreased level of consciousness.",
     "mp3": "20-1190-trim.mp3",
     "vtt": "1190-captions.vtt",
@@ -82,7 +82,9 @@
     "year": "Feb",
     "date": "2/28/2020",
     "lifeCare": "Officials learn 20 residents are ill, with negative flu test results. A resident in her 80s with pneumonia is sent to the hospital with difficulty breathing.\n\nCOVID-19 test results for a Life Care resident and employee come back positive. King County officials contact the state and U.S. Centers for Disease Control and Prevention.",
-    "mp3": 1379,
+    "speaker": "She was diagnosed with pneumonia a couple of days ago.",
+    "mp3": "20-1379-trim.mp3",
+    "vtt": "1379-captions.vtt",
     "deaths": 2,
     "wa": "Expanded testing begins at the state Department of Health's lab in Shoreline.\r\n\r\nTwo police officers and 25 firefighters are quarantined after responding to calls involving Life Care patients.",
     "url": "https://www.seattletimes.com/seattle-news/health/some-kirkland-firefighters-who-responded-to-early-cases-of-novel-coronavirus-have-flu-like-symptoms-city-says/"
@@ -171,7 +173,7 @@
   {
     "year": "March",
     "date": "3/16/2020",
-    "lifeCare": "Of 120 residents at Life Care on Feb. 19, 43 remain in the nursing home and 30 have tested positive for COVID-19. \n\nOf 180 employees, 102 have shown symptoms and 46 have tested positive.",
+    "lifeCare": "Of 120 residents at Life Care on Feb. 19, 43 remain in the nursing home and 30 have tested positive for COVID-19. \n\nOf 180 employees, 102 have shown symptoms and 46 have tested positive.\n\nIn total, 124 confirmed cases, including 29 deaths, have been directly linked to Life Care Center of Kirkland.",
     "cases": 124,
     "deaths": 29
   }

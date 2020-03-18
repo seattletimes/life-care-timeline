@@ -92,7 +92,10 @@
     font-size: 18px;
 
     @media @mobile {
-      font-size: 14px;
+      background-color: @df-footer-gray;
+      text-align: center; 
+      font-size: 13px;
+      line-height: 1.25;
       margin-bottom: 10px;
     }
   }
@@ -186,6 +189,30 @@ p {
   height: 12px;
   display: inline-block;
   margin: 1px;
+
+  &.death {
+    border: 1px solid black;
+    background: #D1912E;
+    border-radius: 10px;
+  }
+
+  &.case {
+    border: 1px solid @df-dark-gray;
+    background: #f5c46b;
+    border-radius: 10px;
+  }
+}
+
+.dot-key {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin: 1px;
+
+  @media @mobile {
+    width: 10px;
+    height: 10px;
+  }
 
   &.death {
     border: 1px solid black;

@@ -12,7 +12,7 @@
 
         <h1>Coronavirus at the Life Care nursing home</h1>
         <p>
-          The U.S. first COVID-19 death was announced at the Kirkland nursing home Feb. 29, but 911 calls and interviews suggest it had been spreading there for weeks.
+          The first confirmed COVID-19 deaths from Life Care Center of Kirkland occurred on Feb. 26, but interviews and 911 calls obtained by The Seattle Times show the disease had been spreading there for weeks. At least 67 of the nursing home’s 120 residents have tested positive, including 29 who have died. A visitor to the nursing home also died, and 46 employees have tested positive, with more tests pending.
         </p>
         
         <div class= "flex-grid header mobile-invisible">
@@ -96,9 +96,9 @@
             <div class="col dots">
               <% if (row.deaths) { %>
                 <div class="col-header key mobile-visible">
-                  <li>KEY</li>
-                  <li><div class="case dot"></div> Total confirmed cases</li>
-                  <li><div class="death dot"></div> Total deaths</li>
+                  <li>KEY: COVID-19 linked to Life Care
+                  </li>
+                  <li><div class="case dot-key"></div> Total confirmed cases | <div class="death dot-key"></div> Deaths</li>
                 </div>
               <% } %>
               <% for (var i = 0; i < row.cases; i++) { %>
@@ -110,7 +110,7 @@
             </div>
 
             <div class="col wa">
-              <% if (row.urlWA) { %>
+              <% if (row.wa) { %>
                 <div class="mobile-visible">
                   <b>Outside of Life Care:</b>
                 </div>
@@ -132,13 +132,13 @@
 
         <div class="source">
           <div>
-            <p>Note: All confirmed cases include deaths and only include residents, employees and visitors of Life Care during those times.</p>
+            <p>Note: All confirmed cases include deaths and only include those linked to residents, employees and visitors of Life Care.</p>
             <p>XXX</p>
-            <p>Sources: Life Care Center of Kirkland, King County Public Health, Snohomish Public Health, Times reporting</p>
+            <p>Sources: Life Care Center of Kirkland, King County Public Health, Snohomish Public Health, North East King County Regional Public Safety Communications Agency, Times reporting</p>
           </div>
           <div class="credit">
             <p>Design and development: Emily M. Eng</p>
-            <P>Audio editing: Lauren Frohne</P>
+            <P>Audio editing and reporting: Lauren Frohne</P>
             <p>Research and reporting: Asia Fields and Mary Hudetz</p>
           </div>
       </main>
