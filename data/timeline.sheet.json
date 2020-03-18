@@ -41,8 +41,7 @@
     "lifeCare": "A 60-year-old man becomes first known resident to be hospitalized for COVID-19 symptoms, but doesn't test positive until later. \n\nAnother resident's son becomes sick days after visiting and he later tests positive, according to his family.",
     "speaker": "He's just had this episode so far, decreased level of consciousness.",
     "mp3": "20-1190-trim.mp3",
-    "vtt": "1190-captions.vtt",
-    "cases": 0
+    "vtt": "1190-captions.vtt"
   },
   {
     "year": "Feb",
@@ -53,8 +52,7 @@
     "vtt": "1293-captions.vtt",
     "speaker2": "Fever, increased breathlessness",
     "mp3_2": "1298-trim.mp3",
-    "vtt2": "1298-captions.vtt",
-    "cases": 0
+    "vtt2": "1298-captions.vtt"
   },
   {
     "year": "Feb",
@@ -143,7 +141,7 @@
     "year": "March",
     "date": "3/5/2020",
     "lifeCare": "Residents' families hold a news conference to vent frustrations over communication, lack of testing.",
-    "cases": 28,
+    "cases": 30,
     "deaths": 17,
     "url": "https://www.seattletimes.com/seattle-news/families-of-nursing-home-residents-at-center-of-coronavirus-outbreak-demand-answers/"
   },
@@ -159,7 +157,7 @@
     "year": "March",
     "date": "3/7/2020",
     "lifeCare": "Life Care holds its first news conference. A spokesman says not all residents have been tested, and the number of deaths and illnesses could be higher than originally thought. \n\nLife Care obtains enough kits to test all residents that night.  \n\nWashington state Department of Social and Health Services and U.S. Centers for Medicare and Medicaid Services enters Life Care to begin investigation.",
-    "cases": 38,
+    "cases": 48,
     "deaths": 22,
     "url": "https://www.seattletimes.com/seattle-news/coronavirus-cases-may-be-higher-than-reported-at-kirkland-nursing-home/"
   },
@@ -167,14 +165,14 @@
     "year": "March",
     "date": "3/14/2020",
     "lifeCare": "University of Washington collects samples from remaining symptomatic Life Care employees in the nursing home parking lot.",
-    "cases": 120,
+    "cases": 142,
     "deaths": 29
   },
   {
     "year": "March",
     "date": "3/16/2020",
     "lifeCare": "Of 120 residents at Life Care on Feb. 19, 43 remain in the nursing home and 30 have tested positive for COVID-19. \n\nOf 180 employees, 102 have shown symptoms and 46 have tested positive.\n\nIn total, 124 confirmed cases, including 29 deaths, have been directly linked to Life Care Center of Kirkland.",
-    "cases": 124,
+    "cases": 142,
     "deaths": 29
   }
 ]

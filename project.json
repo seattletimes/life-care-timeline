@@ -6,7 +6,7 @@
     },
     "live": {
       "bucket": "projects.seattletimes.com",
-      "path": ""
+      "path": "2020/local/life-care-timeline"
     }
   },
   "title": "",
