@@ -20,8 +20,11 @@
           <div class="col-header date">Date</div>
           <div class="col-header event">Inside Life Care</div>
           <div class="col-header key">
-            <li> <div class="case dot"></div> Total confirmed cases</li>
-            <li> <div class="death dot"></div> Total deaths</li>
+            <li> <div class="case dot"></div> <li>Announced cases</li>
+          </div>
+          <div class="col-header key">
+            <li> <div class="death dot"></div> 
+            <li>Deaths to date</li>
           </div>
           <div class="col-header wa">Outside of Life Care</div>
         </div>
@@ -104,15 +107,25 @@
             </div>
 
             <div class="col dots">
-              <% if (row.deaths) { %>
+              <% if (row.cases) { %>
                 <div class="col-header key mobile-visible">
                   <li>KEY: COVID-19 linked to Life Care
                   </li>
-                  <li><div class="case dot-key"></div> Total confirmed cases | <div class="death dot-key"></div> Deaths</li>
+                  <li><div class="case dot-key"></div> Announced cases</li>
                 </div>
               <% } %>
               <% for (var i = 0; i < row.cases; i++) { %>
                 <div class="case dot"></div>
+              <% } %>
+            </div>
+
+            <div class="col dots">
+              <% if (row.deaths) { %>
+                <div class="col-header key mobile-visible">
+                  <li>KEY: COVID-19 linked to Life Care
+                  </li>
+                  <li><div class="death dot-key"></div> Deaths to date</li>
+                </div>
               <% } %>
               <% for (var i = 0; i < row.deaths; i++) { %>
                 <div class="death dot"></div>
@@ -151,8 +164,9 @@
       <div class="flex-grid">
         <div class="source">
           <div>
-            <p>Note: All confirmed cases include deaths and only include those linked to residents, employees and visitors of Life Care.
-            <p>Numbers include cases from multiple counties. The number of confirmed cases is likely an undercount and relies on information from local health departments, Life Care and the CDC, which did not provide consistent data on cases for the entire time period. Deaths have been confirmed by Public Health — Seattle & King County as related to COVID-19 and are based on when the patient died, not when their death was announced.
+            <p>Number of confirmed cases are based on when they were announced by agencies, while deaths are based on patient date of death.
+              <br>
+              The number of confirmed cases is likely an undercount and relies on information from multiple agencies, which did not provide consistent data on cases.
             <br>
             The number of known cases jumped March 9, when the CDC provided more accurate data.
             </p>
@@ -161,7 +175,7 @@
           </div>
         </div>
         <div class="credit">
-          <p>Design and development: Emily M. Eng
+          Design and development: Emily M. Eng
           <br>Audio editing and reporting: Lauren Frohne
           <br>Research and reporting: Asia Fields and Mary Hudetz</p>
         </div>

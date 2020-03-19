@@ -56,14 +56,16 @@
   }
 
   &.dots {
-    flex: 1.5;
+    flex: .75;
     line-height: 1;
     background-color: @df-footer-gray;
     text-align: center;
+    border-left: 1px solid @df-light-gray;
 
     @media @mobile {
       background-color: white;
       text-align: left;
+      border-left: none;
     }
   }
 
@@ -85,11 +87,12 @@
   }
 
   &.key {
-    flex: 1.5;
+    flex: .75;
     list-style-type: none;
     text-align: left;      
     background-color: @df-footer-gray;
-    font-size: 18px;
+    font-size: 16px;
+    border-left: 1px solid @df-light-gray;
 
     @media @mobile {
       background-color: @df-footer-gray;
@@ -97,6 +100,7 @@
       font-size: 13px;
       line-height: 1.25;
       margin-bottom: 10px;
+      border-left: none;
     }
   }
 
@@ -262,6 +266,11 @@ p {
   // padding: 20px 0 10px;
   color: #999;
   font-style: italic;
+
+  @media @mobile {
+    font-size: 12px;
+    display: block;
+  }
 }
 
 .mobile-invisible {
